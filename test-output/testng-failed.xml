@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Firstbox automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.Firtbox.Listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="Firstbox Test cases(failed)">
+    <classes>
+      <class name="com.testcases.Loginfunctionality">
+        <methods>
+          <include name="loginwithvalidCredentials"/>
+          <include name="loginwithInnvalidEmailandvalidPassword"/>
+          <include name="setup"/>
+          <include name="Teardown"/>
+          <include name="loginwithinvalidCredentials"/>
+        </methods>
+      </class> <!-- com.testcases.Loginfunctionality -->
+    </classes>
+  </test> <!-- Firstbox Test cases(failed) -->
+</suite> <!-- Failed suite [Firstbox automation Suite] -->
